@@ -11,3 +11,5 @@
     - signout: 토큰 제거 후 로그인 페이지로 이동
     - signup: userDTO를 POST로 전달
     - socialLogin: provider에 따라 OAuth2 인증 시작
+- 회원가입 컴포넌트
+  - SignUp: ID와 비밀번호를 입력하고 서버에 회원 가입 요청
