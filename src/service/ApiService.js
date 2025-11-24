@@ -1,5 +1,5 @@
 // API 서버의 기본 URL을 불러옴
-import { API_BASE_URL } from "../../api-config";
+import { API_BASE_URL } from "../api-config";
 
 // API 호출을 위한 공통 함수 정의
 export function call(api, method, request) {
