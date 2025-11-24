@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 // 회원가입 컴포넌트 정의
 function SignUp() {
-  //  폼 제출 핸들러 정의: 폼 제출 시 실행
+  // 폼 제출 핸들러 정의: 폼 제출 시 실행
   const handleSubmit = (event) => {
     event.preventDefault(); // 기본 폼 제출 동작(페이지 새로고침) 방지
 
@@ -49,13 +49,14 @@ function SignUp() {
           <Grid item xs={12}>
             {/* 비밀번호 입력 필드 */}
             <TextField
-              autoComplete="current-password" // 자동완성 힌트
-              name="password" // 폼 데이터 키
               variant="outlined" // 외곽선 스타일
               required // 필수 입력
               fullWidth // 전체 너비 사용
-              id="password"
+              name="password" // 폼 데이터 키
               label="패스워드" // 라벨 텍스트
+              type="password"
+              id="password"
+              autoComplete="current-password" // 자동완성 힌트
             />
           </Grid>
           <Grid item xs={12}>
@@ -64,17 +65,16 @@ function SignUp() {
               계정 생성
             </Button>
           </Grid>
-          <Gird item xs={12}>
+          <Grid item xs={12}>
             {/* 로그인 페이지로 이동하는 링크 */}
             <Link to="/login" variant="body2">
               이미 계정이 있습니까? 로그인 하세요.
             </Link>
-          </Gird>
+          </Grid>
         </Grid>
       </form>
     </Container>
   );
 }
 
-// signup 컴포넌트 외부에서 사용할 수 있도록 export
 export default SignUp;
